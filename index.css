@@ -1,0 +1,26 @@
+#header {
+    font-size: 60px;
+    font-family: sans-serif;
+    color: aliceblue;
+    margin-left: 70px;
+}
+
+#header nav {
+    font-size: 20px;
+    margin-top: -90px;
+    margin-bottom: 50px;
+    margin-left: 7.5px;
+}
+
+#content {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: aliceblue;
+    margin-left: 77.5px;
+}
+
+body {
+    background: rgb(18,18,18);
+    background: linear-gradient(90deg, rgba(18,18,18,1) 67%, rgba(5,5,40,1) 100%);
+    backdrop-filter: blur(100px);
+}
