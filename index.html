@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+        <style>
+            .inter-regular {
+                font-family: "Inter", serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+            }
+            .inter-bold {
+                font-family: "Inter", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: normal;
+            }
+        </style>
+    </head>
+
+    <body class="bg-gray-50 w-full h-screen">
+        <div class="flex items-center right-0 h-full">
+            <span class="uppercase xl:text-[200px] text-[65px] inter-bold cursor-default ml-4">Alex<br/>Marcelle</span>
+        </div>
+
+        <div class="absolute flex flex-row gap-4 right-0 bottom-0 mr-4">
+            <a 
+                href="https://linkedin.com/in/axmfs"
+                target="_blank"
+                class="uppercase text-lg inter-regular hover:text-gray-300 duration-500 transition-all"
+            >
+                LinkedIn
+            </a>
+
+            <a 
+                href="https://github.com/axmfs" 
+                target="_blank"
+                class="uppercase text-lg inter-regular hover:text-gray-300 duration-500 transition-all"
+            >
+                GitHub
+            </a>
+
+            <a
+                href="mailto:me@alexmarcelle.com.br" 
+                target="_blank"
+                class="uppercase text-lg inter-regular hover:text-gray-300 duration-500 transition-all"
+            >
+                Contact me
+            </a>
+        </div>
+
+        <div class="absolute right-0 top-0 mr-4">
+            <span class="uppercase text-lg inter-regular" id="currentBrtTime"></span>
+        </div>
+
+        <script>
+            function clock() {
+                const time = new Date().toLocaleString('pt-BR', {
+                    timeZone: "America/Sao_Paulo",
+                    hour12: true,
+                    minute: "2-digit",
+                    hour: "2-digit",
+                });
+                document.getElementById('currentBrtTime').innerText = "BRT " + time;
+            }
+            clock();
+        </script>
+    </body>
+</html>
